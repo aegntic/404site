@@ -1,0 +1,531 @@
+/* Project4Site - PHASE 2: Revolutionary Neural Design System with Apple Aesthetics */
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;300;400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@100;200;300;400;500;600;700;800;900&family=SF+Pro+Text:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* PHASE 2: Revolutionary Neural Color System */
+  --bg-primary: #000000;
+  --bg-secondary: #0a0a0a;
+  --bg-tertiary: #141414;
+  --bg-quaternary: #1a1a1a;
+  --bg-overlay: #202020;
+  --bg-surface: #0f0f0f;
+  --bg-elevated: #181818;
+  
+  /* Neural Text Colors with Enhanced Contrast */
+  --text-primary: #ffffff;
+  --text-secondary: #e5e5e5;
+  --text-tertiary: #b3b3b3;
+  --text-muted: #8a8a8a;
+  --text-subtle: #666666;
+  --text-on-emphasis: #000000;
+  --text-neural: rgba(255, 255, 255, 0.95);
+  
+  /* Neural Border System */
+  --border-primary: rgba(255, 255, 255, 0.12);
+  --border-secondary: rgba(255, 255, 255, 0.08);
+  --border-subtle: rgba(255, 255, 255, 0.05);
+  --border-neural: rgba(255, 215, 0, 0.15);
+  
+  /* Revolutionary Neural Gold Palette */
+  --neural-gold: #FFD700;
+  --neural-gold-bright: #FFED4E;
+  --neural-gold-muted: #FFC107;
+  --neural-gold-dark: #B8860B;
+  --neural-gold-subtle: rgba(255, 215, 0, 0.08);
+  --neural-gold-hover: rgba(255, 215, 0, 0.15);
+  --neural-gold-active: rgba(255, 215, 0, 0.25);
+  
+  /* Enhanced Semantic Colors */
+  --success: #00D084;
+  --success-muted: rgba(0, 208, 132, 0.15);
+  --warning: var(--neural-gold-muted);
+  --warning-muted: rgba(255, 193, 7, 0.15);
+  --error: #FF453A;
+  --error-muted: rgba(255, 69, 58, 0.15);
+  --info: #007AFF;
+  --info-muted: rgba(0, 122, 255, 0.15);
+  
+  /* Neural Interactive System */
+  --link-default: var(--neural-gold);
+  --link-hover: var(--neural-gold-bright);
+  --link-active: var(--neural-gold-dark);
+  --button-primary: var(--neural-gold);
+  --button-primary-hover: var(--neural-gold-bright);
+  --button-primary-active: var(--neural-gold-dark);
+  --accent-primary: var(--neural-gold);
+  --accent-secondary: var(--neural-gold-muted);
+  
+  /* Apple-esque Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.5);
+  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.4), 0 2px 4px rgba(255, 215, 0, 0.05);
+  --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.4), 0 4px 8px rgba(255, 215, 0, 0.08);
+  --shadow-xl: 0 16px 32px rgba(0, 0, 0, 0.4), 0 8px 16px rgba(255, 215, 0, 0.1);
+  --shadow-neural: 0 20px 40px rgba(0, 0, 0, 0.5), 0 8px 16px rgba(255, 215, 0, 0.15);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Inter', 'Segoe UI', Roboto, sans-serif;
+  background: #000000; /* PHASE 2: Pure pitch black foundation */
+  color: var(--text-primary);
+  margin: 0;
+  padding: 0;
+  line-height: 1.65;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  
+  /* PHASE 2: Revolutionary neural background system */
+  background-image: 
+    radial-gradient(circle at 15% 25%, rgba(255, 215, 0, 0.04) 0%, transparent 40%),
+    radial-gradient(circle at 85% 75%, rgba(255, 255, 255, 0.02) 0%, transparent 45%),
+    radial-gradient(circle at 45% 85%, rgba(255, 215, 0, 0.03) 0%, transparent 35%),
+    radial-gradient(circle at 75% 15%, rgba(255, 255, 255, 0.015) 0%, transparent 50%);
+  background-size: 
+    800px 800px,
+    600px 600px,
+    900px 900px,
+    700px 700px;
+  background-attachment: fixed;
+  animation: neural-body-drift 25s ease-in-out infinite;
+}
+
+@keyframes neural-body-drift {
+  0%, 100% {
+    background-position: 0% 0%, 100% 100%, 50% 100%, 100% 0%;
+  }
+  25% {
+    background-position: 10% 5%, 90% 95%, 60% 80%, 95% 10%;
+  }
+  50% {
+    background-position: 5% 10%, 95% 85%, 40% 90%, 85% 5%;
+  }
+  75% {
+    background-position: 15% 2%, 85% 98%, 70% 70%, 98% 15%;
+  }
+}
+
+/* Code font for technical elements */
+.mono, code, pre, .font-mono {
+  font-family: 'JetBrains Mono', 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+}
+
+/* PHASE 2: Revolutionary Neural Glow System */
+.glow-neural {
+  box-shadow: 
+    0 0 20px rgba(255, 215, 0, 0.2),
+    0 0 40px rgba(255, 215, 0, 0.1),
+    0 0 60px rgba(255, 215, 0, 0.05);
+}
+
+.glow-neural-intense {
+  box-shadow: 
+    0 0 30px rgba(255, 215, 0, 0.3),
+    0 0 60px rgba(255, 215, 0, 0.2),
+    0 0 90px rgba(255, 215, 0, 0.1);
+}
+
+.glow-subtle {
+  box-shadow: 
+    0 0 15px rgba(255, 255, 255, 0.08),
+    0 0 30px rgba(255, 255, 255, 0.04);
+}
+
+.glow-professional {
+  box-shadow: 
+    0 0 25px rgba(255, 215, 0, 0.15),
+    0 0 50px rgba(255, 215, 0, 0.08);
+}
+
+.glow-apple {
+  box-shadow: 
+    0 4px 16px rgba(0, 0, 0, 0.3),
+    0 8px 32px rgba(0, 0, 0, 0.2),
+    0 2px 8px rgba(255, 215, 0, 0.1);
+}
+
+/* Legacy support */
+.glow-gold {
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+}
+
+/* Minimal animations */
+@keyframes subtle-float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-5px); }
+}
+
+@keyframes wu-glow {
+  0%, 100% { box-shadow: 0 0 15px rgba(255, 215, 0, 0.1); }
+  50% { box-shadow: 0 0 20px rgba(255, 215, 0, 0.2); }
+}
+
+@keyframes subtle-gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-subtle-float {
+  animation: subtle-float 4s ease-in-out infinite;
+}
+
+.animate-wu-glow {
+  animation: wu-glow 3s ease-in-out infinite;
+}
+
+.animate-subtle-gradient {
+  background-size: 200% 200%;
+  animation: subtle-gradient 4s ease infinite;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-default);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--wu-gold);
+}
+
+/* Selection colors */
+::selection {
+  background: var(--wu-gold-hover);
+  color: var(--text-on-emphasis);
+}
+
+/* PHASE 2: Revolutionary Neural Button System */
+.btn-primary {
+  background: linear-gradient(135deg, var(--neural-gold) 0%, var(--neural-gold-muted) 100%);
+  color: var(--text-on-emphasis);
+  border: none;
+  padding: 14px 28px;
+  border-radius: 12px;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  will-change: transform, box-shadow;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, var(--neural-gold-bright) 0%, var(--neural-gold) 100%);
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: var(--shadow-neural);
+}
+
+.btn-primary:active {
+  transform: translateY(0) scale(1);
+  transition: all 0.1s ease;
+  box-shadow: var(--shadow-md);
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-primary);
+  border: 1px solid var(--border-primary);
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-weight: 400;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: var(--shadow-sm);
+  will-change: transform, box-shadow, border-color;
+}
+
+.btn-secondary:hover {
+  border-color: var(--neural-gold);
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateY(-2px) scale(1.01);
+  box-shadow: var(--shadow-lg);
+  color: var(--neural-gold);
+}
+
+.btn-secondary:active {
+  transform: translateY(0) scale(1);
+  transition: all 0.1s ease;
+}
+
+/* PHASE 2: Revolutionary Neural Card System */
+.card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-secondary);
+  border-radius: 16px;
+  padding: 28px;
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+  backdrop-filter: blur(20px) saturate(150%);
+  -webkit-backdrop-filter: blur(20px) saturate(150%);
+  box-shadow: var(--shadow-md);
+  position: relative;
+  overflow: hidden;
+  will-change: transform, box-shadow;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, 
+    rgba(255, 255, 255, 0.08) 0%, 
+    rgba(255, 255, 255, 0.02) 50%,
+    rgba(255, 215, 0, 0.02) 100%
+  );
+  border-radius: inherit;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.card > * {
+  position: relative;
+  z-index: 2;
+}
+
+.card:hover {
+  border-color: var(--neural-gold);
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: var(--shadow-xl);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+}
+
+.card:hover::before {
+  background: linear-gradient(135deg, 
+    rgba(255, 255, 255, 0.12) 0%, 
+    rgba(255, 255, 255, 0.04) 50%,
+    rgba(255, 215, 0, 0.06) 100%
+  );
+}
+
+/* PHASE 2: Revolutionary Neural Input System */
+.input {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-secondary);
+  color: var(--text-primary);
+  padding: 14px 18px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  width: 100%;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: var(--shadow-sm);
+  will-change: border-color, box-shadow, backdrop-filter;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--neural-gold);
+  box-shadow: 
+    0 0 0 3px var(--neural-gold-hover),
+    var(--shadow-lg);
+  backdrop-filter: blur(16px) saturate(120%);
+  -webkit-backdrop-filter: blur(16px) saturate(120%);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.input::placeholder {
+  color: var(--text-muted);
+  font-weight: 300;
+}
+
+/* Alert styles */
+.alert {
+  padding: 16px;
+  border-radius: 8px;
+  margin: 16px 0;
+  border-left: 4px solid;
+}
+
+.alert-success {
+  background: rgba(0, 255, 136, 0.1);
+  border-color: var(--success);
+  color: var(--success);
+}
+
+.alert-error {
+  background: rgba(255, 107, 157, 0.1);
+  border-color: var(--error);
+  color: var(--error);
+}
+
+.alert-warning {
+  background: rgba(255, 193, 7, 0.1);
+  border-color: var(--warning);
+  color: var(--warning);
+}
+
+.alert-info {
+  background: rgba(0, 217, 255, 0.1);
+  border-color: var(--info);
+  color: var(--info);
+}
+
+/* Loading indicator */
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid var(--bg-tertiary);
+  border-top: 3px solid var(--wu-gold);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Code highlighting */
+.prose pre {
+  background: var(--bg-tertiary) !important;
+  border: 1px solid var(--border-default);
+  border-radius: 8px;
+  padding: 16px;
+  overflow-x: auto;
+}
+
+.prose code {
+  background: var(--bg-tertiary);
+  color: var(--wu-gold);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.prose pre code {
+  background: transparent;
+  padding: 0;
+  color: var(--text-primary);
+}
+
+/* Links */
+a {
+  color: var(--link-default);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+/* Wu-Tang accent utility classes */
+.text-wu-gold { color: var(--wu-gold); }
+.text-wu-gold-muted { color: var(--wu-gold-muted); }
+.text-accent { color: var(--accent-primary); }
+.text-accent-secondary { color: var(--accent-secondary); }
+
+.bg-wu-gold { background-color: var(--wu-gold); }
+.bg-wu-gold-muted { background-color: var(--wu-gold-muted); }
+.bg-wu-gold-subtle { background-color: var(--wu-gold-subtle); }
+.bg-accent { background-color: var(--accent-primary); }
+
+.border-wu-gold { border-color: var(--wu-gold); }
+.border-wu-gold-muted { border-color: var(--wu-gold-muted); }
+.border-accent { border-color: var(--accent-primary); }
+
+/* Professional gradient backgrounds */
+.bg-gradient-professional {
+  background: linear-gradient(135deg, var(--bg-primary), var(--bg-secondary));
+}
+
+.bg-gradient-wu {
+  background: linear-gradient(135deg, var(--wu-gold), var(--wu-gold-muted));
+}
+
+.bg-gradient-subtle {
+  background: linear-gradient(135deg, var(--bg-secondary), var(--bg-tertiary));
+}
+
+/* Professional text gradients */
+.text-gradient-wu {
+  background: linear-gradient(135deg, var(--wu-gold), var(--wu-gold-muted));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-monochrome {
+  background: linear-gradient(135deg, var(--text-primary), var(--text-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Responsive design helpers */
+@media (max-width: 768px) {
+  .card {
+    padding: 16px;
+  }
+  
+  .btn-primary, .btn-secondary {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+}
+
+/* Enhanced focus styles for accessibility */
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid var(--wu-gold);
+  outline-offset: 2px;
+}
+
+/* Smooth transitions for all interactive elements */
+* {
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+/* Professional theme additions */
+.professional-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-default);
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.professional-card:hover {
+  border-color: var(--wu-gold);
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.1);
+}
+
+.wu-accent {
+  color: var(--wu-gold);
+}
+
+.wu-accent-bg {
+  background-color: var(--wu-gold-subtle);
+}
+
+.minimal-glow {
+  box-shadow: 0 2px 8px rgba(255, 215, 0, 0.1);
+}
+

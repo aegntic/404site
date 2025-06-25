@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="256" height="171" viewBox="0 0 256 171" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @media (prefers-color-scheme: dark) {
+        .logo-text { fill: #ffffff; }
+        .logo-accent { fill: #10b981; }
+        .logo-premium { fill: #f59e0b; }
+      }
+      @media (prefers-color-scheme: light) {
+        .logo-text { fill: #000000; }
+        .logo-accent { fill: #059669; }
+        .logo-premium { fill: #d97706; }
+      }
+    </style>
+    <linearGradient id="proGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 4site Pro Logo Design -->
+  <g transform="translate(0, 0)">
+    <!-- "4" Number with Gradient -->
+    <path fill="url(#proGradient)" d="M20 20 L20 80 L50 50 L80 50 L80 20 L50 20 L50 50 L20 50" stroke-width="4" stroke="currentColor"/>
+    
+    <!-- "site" Text -->
+    <text x="90" y="50" class="logo-text" font-family="SF Pro Display, system-ui, sans-serif" font-size="32" font-weight="600">site</text>
+    
+    <!-- ".pro" Premium Badge -->
+    <rect x="90" y="60" width="60" height="20" rx="10" fill="url(#proGradient)"/>
+    <text x="120" y="73" fill="#ffffff" font-family="SF Pro Display, system-ui, sans-serif" font-size="12" font-weight="600" text-anchor="middle">PRO</text>
+    
+    <!-- Premium Accent -->
+    <circle cx="200" cy="30" r="3" class="logo-premium"/>
+    <circle cx="210" cy="25" r="2" class="logo-premium" opacity="0.7"/>
+  </g>
+</svg>

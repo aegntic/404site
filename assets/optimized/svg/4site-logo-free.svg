@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="256" height="171" viewBox="0 0 256 171" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @media (prefers-color-scheme: dark) {
+        .logo-text { fill: #ffffff; }
+        .logo-accent { fill: #3b82f6; }
+      }
+      @media (prefers-color-scheme: light) {
+        .logo-text { fill: #000000; }
+        .logo-accent { fill: #2563eb; }
+      }
+    </style>
+  </defs>
+  
+  <!-- 4site Logo Design -->
+  <g transform="translate(0, 0)">
+    <!-- "4" Number -->
+    <path class="logo-accent" d="M20 20 L20 80 L50 50 L80 50 L80 20 L50 20 L50 50 L20 50" stroke-width="4" stroke="currentColor" fill="none"/>
+    
+    <!-- "site" Text -->
+    <text x="90" y="50" class="logo-text" font-family="SF Pro Display, system-ui, sans-serif" font-size="32" font-weight="600">site</text>
+    
+    <!-- ".pro" Badge -->
+    <rect x="90" y="60" width="60" height="20" rx="10" class="logo-accent" opacity="0.6"/>
+    <text x="120" y="73" fill="#ffffff" font-family="SF Pro Display, system-ui, sans-serif" font-size="12" font-weight="500" text-anchor="middle">FREE</text>
+  </g>
+</svg>
